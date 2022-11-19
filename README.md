@@ -16,22 +16,22 @@
 **注意:** 这个项目仓库仅针对ReactJS。 请查看 [Javascript 面试问题](https://github.com/sudheerj/javascript-interview-questions) 以了解核心 javascript 问题。
 
 
-### 目录 {#table-of-contents}
+### 目录
 
 | 序号 | 问题 |
 | --- | --------- |
 |   | **React 核心** |
-|1  | [什么是React？](#1) |
-|2  | [React 的主要特点是什么？](#2) |
-|3  | [什么是 JSX？](#3) |
-|4  | [Element 和 Component 之间有什么区别？](#4) |
-|5  | [如何在 React 中创建 Component？](#5) |
-|6  | [什么时候用类组件而不是函数组件？](#6) |
-|7  | [什么是纯组件？](#7) |
-|8  | [React 中的 state 是什么？](#8) |
-|9  | [React 中的 props 是什么？](#9) |
-|10 | [state and props 之间有什么区别？](#10) |
-|11 | [为什么我们不应该直接更新 state？](#11) |
+|1  | [什么是React？](#什么是React？) |
+|2  | [React 的主要特点是什么？](#React 的主要特点是什么？) |
+|3  | [什么是 JSX？](#什么是 JSX？) |
+|4  | [Element 和 Component 之间有什么区别？](#Element 和 Component 之间有什么区别？) |
+|5  | [如何在 React 中创建 Component？](#如何在 React 中创建 Component？) |
+|6  | [什么时候用类组件而不是函数组件？](#什么时候用类组件而不是函数组件？) |
+|7  | [什么是纯组件？](#什么是纯组件？) |
+|8  | [React 中的 state 是什么？](#React 中的 state 是什么？) |
+|9  | [React 中的 props 是什么？](#React 中的 props 是什么？) |
+|10 | [state and props 之间有什么区别？](#state and props 之间有什么区别？) |
+|11 | [为什么我们不应该直接更新 state？](#为什么我们不应该直接更新 state？) |
 |12 | [回调函数作为 setState() 的参数的目的是什么？](#12)
 |13 | [HTML 和 React 事件处理有什么区别？](#13) |
 |14 | [如何在 JSX 回调中绑定方法或事件处理程序？](#14) |
@@ -365,14 +365,14 @@
 
 
     
-1. ### 什么是React？ {#1}
+1. ### 什么是React？ 
 
     React 是一个**开源的前端 JavaScript 库**，用于构建用户界面，尤其适用于单页应用程序。它用于处理 Web 和移动应用程序的视图层。React 是由为 Facebook 工作的软件工程师JordanWalke创建的。 (https://github.com/jordwalke)React 于 2011 年首次部署在 Facebook 的 NewsFeed 上，并于 2012 年部署在 Instagram 上。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-2. ### React 的主要特点是什么？ {#2}
+2. ### React 的主要特点是什么？ 
 
     React 的主要特点是：
 
@@ -382,9 +382,9 @@
     * 使用 **可重用/可组合** 的 UI 组件来开发视图。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-3. ### 什么是 JSX？ {#3}
+3. ### 什么是 JSX？ 
 
     *JSX* 是 ECMAScript 的类似 XML 的语法扩展（首字母缩写词代表 *JavaScript XML*）。基本上，它只是为`React.createElement()`函数提供语法糖，为我们提供 JavaScript 的表现力以及类似HTML 的模板语法。
 
@@ -403,9 +403,9 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-4. ### Element 和 Component 之间有什么区别？ {#4}
+4. ### Element 和 Component 之间有什么区别？ 
 
     *Element* 是一个简单的对象，它根据 DOM 节点或其他组件描述您希望在屏幕上显示的内容。*Elements*可以在其 props 中包含其他*Elements*。创建一个 React 元素很容易。一旦创建了一个元素，它就永远不会发生变异。
 
@@ -455,9 +455,9 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-5. ### 如何在 React 中创建 Component？ {#5}
+5. ### 如何在 React 中创建 Component？ 
 
     有两种方法来创建组件。
 
@@ -479,25 +479,25 @@
         ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-6. ### 什么时候用类组件而不是函数组件？ {#6}
+6. ### 什么时候用类组件而不是函数组件？ 
 
     如果组件需要*状态或生命周期方法*，则使用类组件，否则使用 函数组件。
     *但是，从 React 16.8开始，添加了 Hooks，您可以在函数组件中使用状态、生命周期方法和其他仅在类组件中可用的功能。*
     *因此，始终建议使用 函数组件，除非您需要一个 React 功能，但它的 Function组件等效项尚不存在，例如错误边界。*
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-7. ### 什么是纯组件？ {#7}
+7. ### 什么是纯组件？
 
     *`React.PureComponent`* 与 *`React.Component`*完全相同，只是它帮我们处理了`shouldComponentUpdate()`方法。当 props 或 state 发生变化时，*PureComponent* 将对 props 和 state 进行浅比较。 *Component* 不会将当前的 props 和 state 与下一次更新的进行比较。因此，`shouldComponentUpdate`方法默认返回`true`，该组件都会重新渲染。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-8. ### React 中的 state 是什么？ {#8}
+8. ### React 中的 state 是什么？ 
 
     组件的*State*是一个对象，它包含一些可能在组件的生命周期内发生变化的信息。 我们应该始终使我们的 state 尽可能简单，并尽量减少有状态组件的数量。
 
@@ -529,9 +529,9 @@
     state 类似于 props，但它是私有的并且完全由组件控制，如果该该组件不向其他组件传递，任何其他组件都无法访问它。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-9. ### React 中的 props 是什么？ {#9}
+9. ### React 中的 props 是什么？ 
 
     *Props* 是组件的入参。它们是单个值或包含一组值的对象，这些值在创建时使用类似于 HTML 标记属性的命名约定传递给组件。它们是从父组件传递到子组件的数据。
 
@@ -610,16 +610,16 @@
 
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-10. ### state and props 之间有什么区别？ {#10}
+10. ### state and props 之间有什么区别？ 
 
     *props* and *state* 都是纯 JavaScript 对象。虽然它们都影响渲染输出的信息，但它们在组件方面的功能不同。`props` 类似于函数参数传递给组件，而 `state` 是在组件内管理的，类似于在函数中声明的变量。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-11. ### 为什么我们不应该直接更新 state？ {#11}
+11. ### 为什么我们不应该直接更新 state？ 
 
     如果您尝试直接更新 `state`，那么它不会重新渲染组件。
 
@@ -638,9 +638,9 @@
     **注意：**您可以使用最新的 javascript 的类声明语法，并直接在`constructor`中给 state 对象赋值。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-12. ### 回调函数作为 `setState()` 的参数的目的是什么？ {#12}
+12. ### 回调函数作为 `setState()` 的参数的目的是什么？ 
 
     当 setState 完成并渲染组件时调用回调函数。由于`setState()`是**异步的**，回调函数可以用于任何发布操作。
 
@@ -651,9 +651,9 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-13. ### HTML 和 React 事件处理有什么区别？ {#13}
+13. ### HTML 和 React 事件处理有什么区别？ 
     以下是 HTML 和 React 事件处理之间的一些主要区别：
 
     1. 在 HTML 中，事件名称通常以*小写*形式表示：
@@ -682,9 +682,9 @@
     3. 在 HTML 中，您需要通过附加`()`来调用函数，而在 react 中，您不应该函数名称后附加`()`。（例如，参考第一点中的“activateLasers”功能）
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-14. ### 如何在 JSX 回调中绑定方法或事件处理程序？ {#14}
+14. ### 如何在 JSX 回调中绑定方法或事件处理程序？ 
 
     有 3 种方法来实现这一点：
 
@@ -730,9 +730,9 @@
     **注意：** 如果回调作为 prop 传递给子组件，这些组件可能会进行额外的重新渲染。在这些情况下，考虑到性能，最好使用`.bind()`*公共类字段语法*方法。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-15. ### 如何将参数传递给事件处理程序或回调？ {#15}
+15. ### 如何将参数传递给事件处理程序或回调？ 
 
     您可以使用*箭头函数*环绕*事件处理程序*并传递参数：
 
@@ -754,16 +754,16 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-16. ### React 中的合成事件是什么？ {#16}
+16. ### React 中的合成事件是什么？ 
 
     `合成事件` 是围绕浏览器的本机事件的跨浏览器包装器。它的 API 与浏览器的原生事件相同，包括`stopPropagation()`和`preventDefault()`，除了事件在所有浏览器中的工作方式相同。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-17. ### 什么是内联条件表达式？ {#17}
+17. ### 什么是内联条件表达式？ 
 
     您可以使用JS 提供的*if 语句*或*三元表达式*来有条件地呈现表达式。除了这些方法之外，您还可以通过将任何表达式包裹在花括号中，然后在 JS 逻辑运算符`&&`后面来嵌入任何 JSX 表达式。
 
@@ -782,9 +782,9 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-18. ### 什么是“key”属性，在元素数组中使用它有什么好处？ {#18}
+18. ### 什么是“key”属性，在元素数组中使用它有什么好处？ 
 
     `key` 是一个特殊的字符属性，你应该 **should** 在创建元素数组时，为每一个元素添加一个 `key` 属性。 *Key* 属性帮助 React 识别哪些项目已更改、添加或删除。
 
@@ -814,16 +814,16 @@
     2. 如果列表项上不存在*key*属性，控制台中将显示一条警告消息。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-19. ### refs有什么用？ {#19}
+19. ### refs有什么用？ 
 
     *ref*用于返回对元素的引用。在大多数情况下应该*避免使用*它们，但是，当您需要直接访问 DOM元素或组件实例时，它们会很有用。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-20. ### 如何创建 refs？ {#20}
+20. ### 如何创建 refs？ 
 
     有两种方法
     1. 这是最近新增的方法。通过 `React.createRef()` 方法创建*Refs*。 然后将创建的 *Refs* 作为 React 元素的 `ref`属性。为了在整个组件中使用*refs*，只需将 *ref* 分配给构造函数中的实例属性。
@@ -866,9 +866,9 @@
     你也可以在函数组件中通过 **闭包** 使用 *refs* .
     **注意**: 即使不推荐使用内联 ref 回调，您也可以使用它。
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-21. ### 什么是 ref转发? {#21}
+21. ### 什么是 ref转发? 
 
     *Ref 转发* 是一项功能，它允许某些组件获取它们接收到的 *ref*，并将其进一步传递给子组件。
 
@@ -885,9 +885,9 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-22. ### 在 回调refs 和 findDOMNode() 中，选哪个更佳？ {#22}
+22. ### 在 回调refs 和 findDOMNode() 中，选哪个更佳？ 
 
     相对`findDOMNode()` API，最好使用*回调refs*。因为 `findDOMNode()` 阻碍了React未来的某些改进。
 
@@ -924,9 +924,9 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-23. ### 为什么 字符串引用 被删除？ {#23}
+23. ### 为什么 字符串引用 被删除？ 
 
     如果您之前使用过 React，您可能会熟悉一个较旧的 API，其中 `ref` 属性是字符串，例如 `ref={'textInput'}`，并且 DOM 以 `this.refs.textInput` 方式来访问. 我们建议不要这样做，因为 *字符串引用有以下问题*, 并被认为是遗留问题。在 **React v16** 删除了字符串引用.
 
@@ -950,16 +950,16 @@
        }
        ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-24. ### 什么是 虚拟DOM？ {#24}
+24. ### 什么是 虚拟DOM？ 
 
     *虚拟 DOM* (VDOM) *真实 DOM* 的内存表示. UI 表示是保持内存的对象与"真实"DOM保持同步。这是在调用渲染函数和在屏幕上显示元素之间发生的一个步骤。这整个过程称为*和解*。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-25. ### 虚拟 DOM 是如何工作的？ {#25}
+25. ### 虚拟 DOM 是如何工作的？ 
 
     虚拟 DOM 通过三个简单的步骤工作。
 
@@ -976,23 +976,23 @@
         ![vdom3](images/vdom3.png)
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-26. ### Shadow DOM 和 Virtual DOM 有什么区别？ {#26}
+26. ### Shadow DOM 和 Virtual DOM 有什么区别？ 
 
     *Shadow DOM*是一种浏览器技术，主要设计用于*Web 组件*中的范围变量和 CSS。*虚拟 DOM*是一个由 JavaScript 库在浏览器 API 之上实现的概念。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-27. ### 什么是 React Fiber？ {#27}
+27. ### 什么是 React Fiber？ 
 
     Fiber 是 React v16 中新的*协调引擎*（或核心算法）的重新实现。React Fiber 的目标是提高其对动画、布局、手势等领域的适用性，以及暂停、中止或重用工作的能力，并为不同类型的更新分配优先级；和新的并发原语。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-28. ### React Fiber 的主要目标是什么？ {#28}
+28. ### React Fiber 的主要目标是什么？ 
 
     *React Fiber*的目标是提高其在动画、布局和手势等领域的适用性。它的主要功能是 **增量渲染** ：能够将渲染工作分成块并将其分散到多个帧上。
     
@@ -1005,9 +1005,9 @@
       4. 能够从 render() 返回多个元素。
       5. 更好地支持错误边界。
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-29. ### 什么是受控组件？ {#29}
+29. ### 什么是受控组件？ 
 
     控制后续用户输入时表单中的输入元素的组件称为**受控组件**，即每个 state 变化都有一个关联的处理函数。例如，要将所有名称都写成大写字母，我们使用 handleChange 如下，
 
@@ -1018,9 +1018,9 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-30. ### 什么是不受控组件？ {#30}
+30. ### 什么是不受控组件？ 
 
     **不受控制的组件**是在内部存储自己状态的组件，您可以在需要时使用 ref 查询 DOM 以找到其当前值。这有点像传统的 HTML。
 
@@ -1056,23 +1056,23 @@
     在大多数情况下，建议使用受控组件来实现表单。在受控组件中，表单数据由 React 组件处理。另一种方法是不受控制的组件，其中表单数据由 DOM 本身处理。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-31. ### createElement 和 cloneElement 有什么区别？ {#31}
+31. ### createElement 和 cloneElement 有什么区别？ 
 
     JSX 元素将被转换为`React.createElement()`函数以创建 React 元素，这些元素将用于 UI 的对象表示。而`cloneElement`用于克隆元素并传递新的 props。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-32. ### React 中的状态提升是什么？ {#32}
+32. ### React 中的状态提升是什么？ 
 
     当多个组件需要共享相同的变化数据时，建议*将共享状态提升*到它们最近的共同祖先。这意味着如果两个子组件从其父组件共享相同的数据，则将状态移动到父组件，而不是在两个子组件中保持各自的状态。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-33. ### 组件生命周期的不同阶段是什么？ {#33}
+33. ### 组件生命周期的不同阶段是什么？ 
 
     组件具有三个不同的生命周期阶段：
 
@@ -1100,9 +1100,9 @@
 
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-34. ### React 的生命周期方法有哪些？ {#34}
+34. ### React 的生命周期方法有哪些？ 
 
     在 React 16.3 之前
 
@@ -1124,9 +1124,9 @@
     - **componentWillUnmount** 它将用于取消任何传出的网络请求，或删除与该组件关联的所有事件侦听器。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-35. ### 什么是高阶组件？ {#35}
+35. ### 什么是高阶组件？ 
 
     *高阶组件* (*HOC*) 是一个函数，它接受一个组件作为参数并返回一个新组件。基本上，它是一种源自React 组合特性的模式。
 
@@ -1144,9 +1144,9 @@
     4. Props 操作。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-36. ### 如何为 HOC 组件创建 props 代理？ {#36}
+36. ### 如何为 HOC 组件创建 props 代理？ 
 
     您可以使用*props 代理*模式添加/编辑传递给组件的props，如下所示：
 
@@ -1168,9 +1168,9 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-37. ### 什么是 context？ {#37}
+37. ### 什么是 context？ 
 
     *Context*提供了一种通过组件树传递数据的方法，而无需在每个级别手动传递 props。
     例如，经过身份验证的用户、区域设置偏好、UI 主题需要在应用程序中由许多组件访问。
@@ -1180,9 +1180,9 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-38. ### 什么是子属性？ {#38}
+38. ### 什么是子属性？ 
 
     *Children* 是一个属性 (`this.props.children`) 它允许您将组件作为数据传递给其他组件，就像您使用的任何其他 prop 一样。放在组件的开始标签和结束标签之间的组件树将作为`children` prop 传递给该组件。
 
@@ -1207,9 +1207,9 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-39. ### 如何在 React 中写评论？ {#39}
+39. ### 如何在 React 中写评论？ 
 
     React/JSX 中的注释类似于 JavaScript 多行注释，但用花括号括起来。
 
@@ -1233,9 +1233,9 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-40. ### 使用 super(props) 的目的是什么？ {#40}
+40. ### 使用 super(props) 的目的是什么？ 
 
     在调用`super(props)`方法之前，子类构造函数不能使用`this`引用。 `super()`同样适用于 ES6 子类。调用 `super(props)` 的主要原因就是在你的子构造函数中访问 `this.props` 。
 
@@ -1274,16 +1274,16 @@
     上面的代码片段表明，`this.props` 仅在构造函数中有所不同。在构造函数之外也是一样的。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-41. ### 什么是协调？ {#41}
+41. ### 什么是协调？ 
 
     当组件的 props 或 state 发生变化时，React 通过将新返回的元素与之前渲染的元素进行比较来决定是否需要进行实际的 DOM 更新。当它们不相等时，React 将更新 DOM。这个过程称为*协调*。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-42. ### 如何使用动态 key 设置 state？ {#42}
+42. ### 如何使用动态 key 设置 state？ 
 
     如果您使用 ES6 或 Babel 转译器来转换您的 JSX 代码，那么您可以使用*计算的属性名*来完成此操作。
 
@@ -1294,9 +1294,9 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-43. ### 每次渲染组件时调用函数的常见错误是什么？ {#43}
+43. ### 每次渲染组件时调用函数的常见错误是什么？ 
 
     您需要确保在将函数作为参数传递时没有调用该函数。
 
@@ -1317,9 +1317,9 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-44. ### 惰性函数是否支持命名导出？ {#44}
+44. ### 惰性函数是否支持命名导出？ 
     不支持，当前`React.lazy`功能仅支持默认导出。如果您想导入名为导出的模块，您可以创建一个中间模块，将其重新导出为默认模块。它还确保 tree shaking 继续工作并且不会拉动未使用的组件。让我们看一个导出多个命名组件的组件文件，
     ```javascript
     // MoreComponents.js
@@ -1337,9 +1337,9 @@
     const SomeComponent = lazy(() => import("./IntermediateComponent.js"));
     ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-45. ### 为什么 React 使用 `className` 而不是 `class` 属性？ {#45}
+45. ### 为什么 React 使用 `className` 而不是 `class` 属性？ 
 
     `class` 是 JavaScript 中的关键字，而 JSX 是 JavaScript 的扩展。这就是 React 使用 `className` 而不是 `class`，传递一个字符串作为 `className` 属性的原因。
 
@@ -1350,9 +1350,9 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-46. ### 什么是 fragments？ {#46}
+46. ### 什么是 fragments？ 
 
     这是 React 中的一种常见模式，用于组件返回多个元素。*Fragments* 让您可以对子列表进行分组，而无需向 DOM 添加额外的节点。
 
@@ -1383,9 +1383,9 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-47. ### 为什么 fragments 比容器 div 更好？ {#47}
+47. ### 为什么 fragments 比容器 div 更好？ 
     有以下原因，
 
     1. 通过不创建额外的 DOM 节点，Fragments速度更快并且使用更少的内存。这只对非常大和深的树有真正的好处。
@@ -1393,9 +1393,9 @@
     3. DOM Inspector 不那么杂乱。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-48. ### React 中的`Portal`是什么？ {#48}
+48. ### React 中的`Portal`是什么？ 
 
     *Portal* 将子级渲染到存在于父组件的 DOM 层次结构之外的 DOM 节点中的推荐方式。
 
@@ -1406,16 +1406,16 @@
     第一个参数是任何可渲染的 React 子节点，例如元素、字符串或片段。第二个参数是一个 DOM元素。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-49. ### 什么是无状态组件？ {#49}
+49. ### 什么是无状态组件？ 
 
     如果组件的行为独立于其状态，则它可以是无状态组件。您可以使用函数或类来创建无状态组件。但除非您需要在组件中使用生命周期挂钩，否则您应该选择功能组件。如果你决定在这里使用函数组件，会有很多好处；它们易于编写、理解和测试，速度稍快，您可以完全避免使用关键字`this`。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-50. ### 什么是有状态组件？ {#50}
+50. ### 什么是有状态组件？ 
 
     如果组件的行为依赖于组件的*state*，那么它可以称为有状态组件。这些*有状态组件*总是*类组件*，并且在`constructor`进行初始化`state`。
 
@@ -1451,9 +1451,9 @@
 
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-51. ### 如何在 React 中验证 props？ {#51}
+51. ### 如何在 React 中验证 props？ 
 
     当应用在*开发模式*下运行时，React 自动检查我们在组件上设置的所有prop，以确保它们具有正确的类型。如果类型不正确，React 将在控制台中生成警告消息。由于性能影响，它在*生产模式*下被禁用。强制性 `prop` 用`isRequired`。
 
@@ -1516,9 +1516,9 @@
     }
     ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-52. ### React 的优点是什么？ {#52}
+52. ### React 的优点是什么？ 
     以下是 React 的主要优点，
 
     1. 使用*Virtual DOM*提高应用程序的性能。
@@ -1528,9 +1528,9 @@
     5. 易于与其他测试工具，如 Jest 等工具配合使用时，轻松编写单元和集成测试。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-53. ### React 的局限性是什么？ {#53}
+53. ### React 的局限性是什么？ 
     除了优点之外，React 的限制也不少,
 
     1. React 只是一个视图库，而不是一个完整的框架。
@@ -1540,9 +1540,9 @@
     5. 太多较小的组件导致过度工程化或样板化。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-54. ### React v16 中的错误边界是什么？ {#54}
+54. ### React v16 中的错误边界是什么？ 
 
     *错误边界*是在其子组件树的任何位置捕获 JavaScript 错误、记录这些错误并显示后备 UI 而不是崩溃的组件树。
 
@@ -1584,23 +1584,23 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-55. ### React v15 中如何处理错误边界？ {#55}
+55. ### React v15 中如何处理错误边界？ 
 
     React v15 使用 `unstable_handleError` 方法，为*错误边界*提供了非常基本的支持. 它在 React v16 被重命名为 `componentDidCatch` 。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-56. ### 静态类型检查的推荐方法是什么？ {#56}
+56. ### 静态类型检查的推荐方法是什么？ 
 
     通常我们使用 *PropTypes 库* (从 React v15.5 开始 `React.PropTypes` 被移到 `prop-types` 包) 在 React 应用程序中做 *类型检查* 。对于大型代码库，建议使用*静态类型检查器*，例如Flow 或 TypeScript，它们在编译时执行类型检查并提供自动完成功能。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-57. ### `react-dom` 包有什么用？ {#57}
+57. ### `react-dom` 包有什么用？ 
 
     `react-dom` 包提供了可以在应用程序的顶层使用的*特定于DOM的方法*。大多数组件都不需要使用此模块。这个包的一些方法是：
 
@@ -1611,9 +1611,9 @@
     5. `createPortal()`
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-58. ### `react-dom`的render方法的目的是什么？ {#58}
+58. ### `react-dom`的render方法的目的是什么？ 
 
     此方法用于将 React 元素渲染到所提供容器中的 DOM 中，并返回对该组件的引用。如果React 元素之前已渲染到容器中，它将对其执行更新，并且仅根据需要更改 DOM 以反映最新更改。
 
@@ -1624,9 +1624,9 @@
     如果提供了可选的 callback 参数，它将在组件渲染或更新后执行。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-59. ### ReactDOMServer 是什么？ {#59}
+59. ### ReactDOMServer 是什么？ 
 
     ReactDOMServer对象使您能够将组件呈现为静态标签（通常在node服务器上使用）。该对象主要用于*服务端渲染（SSR）。*在服务器和浏览器环境中都可以使用以下方法：
 
@@ -1650,9 +1650,9 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-60. ### 如何在 React 中使用 InnerHtml？ {#60}
+60. ### 如何在 React 中使用 InnerHtml？ 
 
      React 中的 `dangerouslySetInnerHTML` 属性，与浏览器 DOM 中 `innerHTML`等价。就像 `innerHTML` 一样，考虑到跨站点脚本 (XSS) 攻击，使用此属性是有风险的。您只需将`__html`对象作为键和 HTML 文本作为值传递。
 
@@ -1669,9 +1669,9 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-61. ### 如何在 React 中使用样式？ {#61}
+61. ### 如何在 React 中使用样式？ 
 
     该`style`属性接受带有驼峰式属性的 JavaScript 对象，而不是 CSS 字符串。这与 DOM 样式的JavaScript 属性一致，效率更高，并且可以防止 XSS 安全漏洞。
 
@@ -1689,9 +1689,9 @@
     样式键是驼峰式的，以便与在 JavaScript 中访问 DOM 节点上的属性保持一致（例如`node.style.backgroundImage`）。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-62. ### React 中的事件有何不同？ {#62}
+62. ### React 中的事件有何不同？ 
 
     在 React 元素中处理事件有一些语法差异：
 
@@ -1699,16 +1699,16 @@
     2. 使用 JSX，您将函数作为事件处理程序传递，而不是字符串。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-63. ### 如果在构造函数中使用 setState() 会发生什么？ {#63}
+63. ### 如果在构造函数中使用 setState() 会发生什么？ 
 
     当您使用`setState()`时，除了分配给对象状态之外，React 还会重新渲染组件及其所有子组件。你会得到这样的错误：*只能更新一个挂载或挂载的组件*。所以我们需要在构造函数内部，使用`this.state`来初始化 state 变量。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-64. ### 索引作为键有什么影响？ {#64}
+64. ### 索引作为键有什么影响？ 
 
     键应该是稳定的、可预测的和唯一的，以便 React 可以跟踪元素。
 
@@ -1733,9 +1733,9 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-65. ### 在 `componentWillMount()` 方法中使用 `setState()` 好吗？ {#65}
+65. ### 在 `componentWillMount()` 方法中使用 `setState()` 好吗？ 
 
     是的, 在 `componentWillMount()` 方法中使用 `setState()` 是安全的。 但同时建议在 `componentWillMount()` 生命周期方法中避免异步初始化。`componentWillMount()` 在挂载发生之前立即调用。它在 `render()` 方法之前调用，因此在此方法中设置状态不会触发重新渲染。避免在此方法中引入任何副作用或订阅。我们需要确保组件初始化的异步调用发生在 `componentDidMount()` 而不是 `componentWillMount()` 中。
 
@@ -1751,9 +1751,9 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-66. ### 如果你在初始化状态时使用 props 会发生什么？ {#66}
+66. ### 如果你在初始化状态时使用 props 会发生什么？ 
 
     如果组件上的 props 在组件没有被刷新的情况下发生了变化，那么新的 props 值将永远不会显示，因为构造函数永远不会更新组件的当前状态。来自 props 的状态初始化仅在组件首次创建时运行。
 
@@ -1795,9 +1795,9 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-67. ### 如何条件渲染组件？ {#67}
+67. ### 如何条件渲染组件？ 
 
    在某些情况下，您希望根据某些状态呈现不同的组件。 JSX 不渲染 `false` 、 `undefined`，因此只有在某个条件为真时，您才能使用条件`短路`来渲染组件的给定部分。
 
@@ -1827,9 +1827,9 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-68. ### 为什么我们在 DOM 元素上传递 props 时需要小心？ {#68}
+68. ### 为什么我们在 DOM 元素上传递 props 时需要小心？ 
 
     当我们*传递 props*时，我们会遇到添加未知 HTML 属性的风险，这是一种不好的做法。相反，我们可以使用带有运算符的属性解构`...rest`，那么它只会添加所需的属性。
 
@@ -1844,9 +1844,9 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-69. ### 如何在 React 中使用装饰器？ {#69}
+69. ### 如何在 React 中使用装饰器？ 
 
     您可以*装饰*您的*类*组件，这与将组件传递给函数相同。**装饰器** 是修改组件功能的很灵活且可读的方式。
 
@@ -1875,9 +1875,9 @@
     **注意：** 装饰器是一个没有进入 ES7 的特性，但目前是第 2 阶段的提案。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-70. ### 你如何记忆一个组件？ {#70}
+70. ### 你如何记忆一个组件？ 
 
     有可用的 memoize 库可用于函数组件。
 
@@ -1907,9 +1907,9 @@
       export default React.memo(MyFunctionComponent);
     ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-71. ### 您如何实现服务器端渲染或 SSR？ {#71}
+71. ### 您如何实现服务器端渲染或 SSR？ 
 
     React 已经具备在 Node 服务器上处理渲染的能力。有一个特殊版本的 DOM 渲染器可用，它遵循与客户端相同的模式。
 
@@ -1923,16 +1923,16 @@
     此方法会将常规 HTML 输出为字符串，然后可以将其作为服务器响应的一部分放置在页面正文中。在客户端，React 检测到预渲染的内容并无缝地从中断的地方继续。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-72. ### 如何在 React 中启用生产模式？ {#72}
+72. ### 如何在 React 中启用生产模式？ 
 
     您应该使用 Webpack 的 `DefinePlugin` 方法设置 `NODE_ENV` 为 `production` ，通过它去除诸如 propType 验证和额外警告之类的东西。除此之外，如果你压缩代码，例如，Uglify 的废代码消除，以及仅开发时用到的调试代码和注释，它将大大减少你的包的大小。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-73. ### 什么是 CRA 及其好处？ {#73}
+73. ### 什么是 CRA 及其好处？ 
 
     `create-react-app` CLI 工具使您无需配置步骤即可快速创建和运行 React 应用程序。
 
@@ -1961,9 +1961,9 @@
     6. 一个构建脚本，用于生产的 JS、CSS 和图像的打包，以及散列和源映射。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-74. ### Mounting 中的生命周期方法顺序是什么？ {#74}
+74. ### Mounting 中的生命周期方法顺序是什么？ 
 
     在创建组件实例并将其插入 DOM 时，将按以下顺序调用生命周期方法。
 
@@ -1973,9 +1973,9 @@
     4. `componentDidMount()`
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-75. ### React v16 将弃用哪些生命周期方法？ {#75}
+75. ### React v16 将弃用哪些生命周期方法？ 
 
     以下生命周期方法将是不安全的编码实践，并且在异步渲染时会出现更多问题。
 
@@ -1986,9 +1986,9 @@
     从 React v16.3 开始，这些方法使用 `UNSAFE_` 前缀作为别名，并且在 React v17 中将删除无前缀版本。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-76. ### `getDerivedStateFromProps()` 生命周期方法的目的是什么？ {#76}
+76. ### `getDerivedStateFromProps()` 生命周期方法的目的是什么？ 
 
     新的静态 `getDerivedStateFromProps()` 生命周期方法在组件被实例化之后以及在重新渲染之前被调用。它可以返回一个对象来更新状态，或者返回 `null` 表明不需要任何状态更新。
 
@@ -2003,9 +2003,9 @@
     这个生命周期方法与 `componentDidUpdate()` 涵盖了 `componentWillReceiveProps()` 的所有使用场景。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-77. ### `getSnapshotBeforeUpdate()` 生命周期方法的目的是什么？ {#77}
+77. ### `getSnapshotBeforeUpdate()` 生命周期方法的目的是什么？ 
 
     新的 `getSnapshotBeforeUpdate()` 生命周期方法在 DOM 更新之前被调用。此方法的返回值将作为第三个参数传递给 `componentDidUpdate()`。
 
@@ -2020,16 +2020,16 @@
     这个生命周期方法与 `componentDidUpdate()` 涵盖了 `componentWillUpdate()` 的所有使用场景。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-78. ### Hooks 会取代 render props 和 高阶组件吗？ {#78}
+78. ### Hooks 会取代 render props 和 高阶组件吗？ 
 
     渲染道具和高阶组件都只渲染一个子节点，但在大多数情况下，Hooks 是一种通过减少树中的嵌套来提供此服务的更简单方法。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-79. ### 命名组件的推荐用法是什么？ {#79}
+79. ### 命名组件的推荐用法是什么？ 
 
     建议通过引用来命名组件，而不是使用 `displayName`.
 
@@ -2057,9 +2057,9 @@
     export default TodoApp;
     ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-80. ### 组件类中方法的推荐顺序是什么？ {#80}
+80. ### 组件类中方法的推荐顺序是什么？ 
 
     *Recommended* ordering of methods from *mounting* to *render stage*:
     从*挂载*到*渲染*阶段的*推荐*方法顺序：
@@ -2080,9 +2080,9 @@
     14. `render()`
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-81. ### 什么是开关组件？ {#81}
+81. ### 什么是开关组件？ 
 
     *开关组件* 是呈现多个组件之一的组件。我们需要使用 object 将 prop 值映射到组件。
 
@@ -2114,9 +2114,9 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-82. ### 为什么我们需要给 setState() 传递函数？ {#82}
+82. ### 为什么我们需要给 setState() 传递函数？ 
 
     这背后的原因是这 `setState()` 是一个异步操作。出于性能原因，React 批处理状态更改，因此在调用`setState()`后状态可能不会立即更改。这意味着您在调用 `setState()` 时不应依赖当前状态，因为您无法确定该状态将是什么。解决方案是将函数传递给 `setState()` ，将先前的状态作为参数。通过这样做，您可以避免由于`setState()`的异步特性而导致用户在访问时获取旧状态值的问题。
 
@@ -2164,10 +2164,10 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
 
     
-83. ### React 中的严格模式是什么？ {#83}
+83. ### React 中的严格模式是什么？ 
 
     `React.StrictMode` 是一个有用的组件，用于暴露应用程序中的潜在问题。它像 `<Fragment>`, `<StrictMode>` 组件一样，不会渲染任何额外的 DOM 元素。它为其后代激活额外的检查和警告。这些检查仅适用于*开发模式*。
 
@@ -2193,9 +2193,9 @@
     在上面的示例中，*严格模式*检查仅适用于`<ComponentOne>`和`<ComponentTwo>`组件。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-84. ### React Mixins是什么？ {#84}
+84. ### React Mixins是什么？ 
 
     *Mixins*是一种完全分离组件以具有通用功能的方法。**不应该使用**Mixins，可以用*高阶组件*或*装饰器*替换。
 
@@ -2212,7 +2212,7 @@
     <!-- TODO: mixins 已被弃用 -->
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 85. ### Why is `isMounted()` an anti-pattern and what is the proper solution?
 
@@ -2229,9 +2229,9 @@
     An optimal solution would be to find places where `setState()` might be called after a component has unmounted, and fix them. Such situations most commonly occur due to callbacks, when a component is waiting for some data and gets unmounted before the data arrives. Ideally, any callbacks should be canceled in `componentWillUnmount()`, prior to unmounting.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-86. ### React 支持哪些指针事件？ {#86}
+86. ### React 支持哪些指针事件？ 
 
     *指针事件*提供了处理所有输入事件的统一方式。在过去，我们有一个鼠标和相应的事件监听器来处理它们，但现在我们有许多与鼠标无关的设备，比如带有触摸表面或笔的手机。我们需要记住，这些事件只会在支持*指针事件*规范的浏览器中起作用。
 
@@ -2249,9 +2249,9 @@
     10. `onPointerOut`
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-87. ### 为什么组件名称要以大写字母开头？ {#87}
+87. ### 为什么组件名称要以大写字母开头？ 
 
     如果您使用 JSX 渲染组件，则该组件的名称必须以大写字母开头，否则 React 将作为无法识别的标记抛出错误。这个约定是因为只有 HTML 元素和 SVG 标签可以以小写字母开头。
     ```jsx
@@ -2290,9 +2290,9 @@
         }
     ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-88. ### React v16 是否支持自定义 DOM 属性？ {#88}
+88. ### React v16 是否支持自定义 DOM 属性？ 
 
     是的。过去，React 过去常常忽略未知的 DOM 属性。如果你用 React 无法识别的属性编写JSX，React 会跳过它。
 
@@ -2317,9 +2317,9 @@
     这对于提供特定于浏览器的非标准属性、尝试新的 DOM API 以及与个性化的第三方库集成很有用。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-89. ### 构造函数和getInitialState有什么区别？ {#89}
+89. ### 构造函数和getInitialState有什么区别？ 
 
     使用 ES6 类时应在构造函数中初始化状态，使用`React.createClass()` 时使用 `getInitialState()` 方法初始化状态。
 
@@ -2347,9 +2347,9 @@
     **注意：** `React.createClass()` 在 React v16 中已弃用和删除。请改用纯 JavaScript 类。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-90. ### 你能在不调用 setState 的情况下强制组件重新渲染吗？ {#90}
+90. ### 你能在不调用 setState 的情况下强制组件重新渲染吗？ 
 
     默认情况下，当您的组件的 `state` 或 `props` 发生变化时，您的组件将重新渲染。如果你的`render()`方法依赖于其他一些数据，你可以通过调用`forceUpdate()`告诉 React 组件需要重新渲染。
 
@@ -2360,9 +2360,9 @@
     建议避免使用`forceUpdate()`，并且在`render()`方法中只读取`this.props`和`this.state`。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-91. ### 使用 ES6 类的 React 中的 `super()` 和 `super(props)` 有什么区别？ {#91}
+91. ### 使用 ES6 类的 React 中的 `super()` 和 `super(props)` 有什么区别？ 
 
     当您想在`constructor()`方法中访问`this.props`时，您应该将`props`传递给`super()`方法。
 
@@ -2391,9 +2391,9 @@
     在`constructor()`方法之外，`this.props`都将显示相同的值。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-92. ### 如何在 JSX 中循环？ {#92}
+92. ### 如何在 JSX 中循环？ 
 
     您可以简单地使用`Array.prototype.map`和*ES6箭头函数*语法。
 
@@ -2418,9 +2418,9 @@
     这是因为 JSX 标签被转译为*函数调用*，你不能在表达式中使用语句。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-93. ### 如何在属性引号中访问 props？ {#93}
+93. ### 如何在属性引号中访问 props？ 
 
     React（或 JSX）不支持属性值内的变量插值。以下表示将不起作用：
 
@@ -2441,9 +2441,9 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-94. ### 什么是带形状的 React PropType 数组？ {#94}
+94. ### 什么是带形状的 React PropType 数组？ 
 
     如果要将对象数组传递给具有特定形状的组件，那么使用 `React.PropTypes.shape()` 作为参数传递给 `React.PropTypes.arrayOf()`。
 
@@ -2457,9 +2457,9 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-95. ### 如何有条件地应用 class 属性？ {#95}
+95. ### 如何有条件地应用 class 属性？ 
 
     您不应该在引号内使用大括号，因为它将被当作字符串。
 
@@ -2480,25 +2480,25 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-96. ### React 和 ReactDOM 有什么区别？ {#96}
+96. ### React 和 ReactDOM 有什么区别？ 
 
     `react` 包包含 `React.createElement()`, `React.Component`, `React.Children`，和其他与元素、组件类相关的帮助程序。您可以将这些视为构建组件所需的同构或通用助手。`react-dom` 包包含 `ReactDOM.render()`，并且在 `react-dom/server` 中有 `ReactDOMServer.renderToString()` 和 `ReactDOMServer.renderToStaticMarkup()`方法来支持*服务端渲染*。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-97. ### 为什么 ReactDOM 与 React 分离？ {#97}
+97. ### 为什么 ReactDOM 与 React 分离？ 
 
     React 团队致力于将所有与 DOM 相关的特性提取到一个名为*ReactDOM*的单独库中。React v0.14 是第一个拆分库的版本。通过查看一些包，`react-native`、`react-art`、`react-canvas`与`react-three`，很明显 React 的妙处和本质与浏览器或 DOM 无关。
 
     为了构建更多 React 可以渲染的环境，React 团队计划将主要的 React 包分成两个：`react`和`react-dom`。这为编写可以在 Web 版本的 React 和 React Native 之间共享的组件铺平了道路。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-98. ### 如何使用 React 标签元素？ {#98}
+98. ### 如何使用 React 标签元素？ 
 
     如果你尝试渲染一个 `<label>` 元素，并且使用标准的 `for` 属性绑定到一个文本输入框，那么生成HTML标签将会丢失该属性，并向控制台打印警告。
 
@@ -2515,9 +2515,9 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-99. ### 如何组合多个内联样式对象？ {#99}
+99. ### 如何组合多个内联样式对象？ 
 
     您可以在React中使用*扩展运算符*：
 
@@ -2532,7 +2532,7 @@
     ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 100. ### 调整浏览器大小时如何重新渲染视图？
 
@@ -2568,16 +2568,16 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-101. ### `setState()` 和 `replaceState()` 方法有什么区别？ {#101}
+101. ### `setState()` 和 `replaceState()` 方法有什么区别？ 
 
      当您使用`setState()`，当前和以前的状态会合并。 `replaceState()` 舍弃当前状态，并仅用您提供的内容替换它。通常使用 `setState()`，除非您出于某种原因确实需要删除所有以前的`key`。你也可以在`setState()`中，将状态设置为`false`/`null`，而不是使用`replaceState()`。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-102. ### 如何监听 state 变化？ {#102}
+102. ### 如何监听 state 变化？ 
 
      状态改变时会调用`componentDidUpdate`生命周期方法。您可以将新的 state 和 props 值与当前state 和 props 进行比较，以确定是否有变化。
 
@@ -2587,9 +2587,9 @@
 
      **注意：** ReactJS 的早期版本也使用 `componentWillUpdate(object nextProps, object nextState)` 来监听 state 变化。它已在最新版本中被弃用。
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-103. ### 在 react state 中删除数组元素的推荐方法是什么？ {#103}
+103. ### 在 react state 中删除数组元素的推荐方法是什么？ 
 
      较好的方法是使用 `Array.prototype.filter()` 方法。
 
@@ -2604,9 +2604,9 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-104. ### 是否可以在不渲染 HTML 的情况下使用 React？ {#104}
+104. ### 是否可以在不渲染 HTML 的情况下使用 React？ 
 
      最新版本（> = 16.2）是可以的。以下是可以的选项：
 
@@ -2643,9 +2643,9 @@
      返回 `undefined` 就不行。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-105. ### 如何使用 React 格式化打印 JSON？ {#105}
+105. ### 如何使用 React 格式化打印 JSON？ 
 
      我们可以使用 `<pre>` 标签来格式化显示`JSON.stringify()`的输出内容：
 
@@ -2666,14 +2666,14 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-106. ### 为什么你不能在 React 中更新 props？ {#106}
+106. ### 为什么你不能在 React 中更新 props？ 
 
      React 的哲学是 props 应该是*不可变*的和*自上向下*的。这意味着父组件可以向子组件发送任何`props`值，但子组件不能修改收到的`props`。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 107. ### 如何在页面加载时让输入元素获取焦点？
 
@@ -2730,9 +2730,9 @@
 
       ReactDOM.render(<App />, document.getElementById('app'))
       ```
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-108. ### 更新 state 中的对象的方式有哪些？ {#108}
+108. ### 更新 state 中的对象的方式有哪些？ 
 
      1. **调用 `setState()` 以合并state的对象**
 
@@ -2762,10 +2762,10 @@
          ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 
-109. ### 我们如何在浏览器中找到当前运行的 React 版本？ {#109}
+109. ### 我们如何在浏览器中找到当前运行的 React 版本？ 
 
      可以使用 `React.version` 来获取版本。
 
@@ -2779,9 +2779,9 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-110. ### 在你的 `create-react-app` 中包含 polyfill 的方法有哪些？ {#110}
+110. ### 在你的 `create-react-app` 中包含 polyfill 的方法有哪些？ 
 
      有这些方法可以让 create-react-app 中包含 polyfill，
 
@@ -2806,9 +2806,9 @@
          在上面的脚本中，我们明确请求`Array.prototype.includes`功能，因为它不包含在默认功能集中。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-111. ### 如何在 create-react-app 中使用 https 而不是 http？ {#111}
+111. ### 如何在 create-react-app 中使用 https 而不是 http？ 
 
      你只需要使用 `HTTPS=true` 配置。您可以编辑 `package.json` scripts 部分:
 
@@ -2821,9 +2821,9 @@
      或者运行 `set HTTPS=true && npm start`
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-112. ### 如何避免在 create-react-app 中使用相对路径导入？ {#112}
+112. ### 如何避免在 create-react-app 中使用相对路径导入？ 
 
      在项目根目录创建 `.env` 文件，并写入导入路径：
 
@@ -2834,9 +2834,9 @@
      之后重新启动开发服务器。现在您应该能够在`src/app`内没有相对路径的情况下导入任何内容。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-113. ### 如何为 react-router 添加 Google Analytics？ {#113}
+113. ### 如何为 react-router 添加 Google Analytics？ 
 
      在`history`对象上添加一个监听器来记录每个页面视图：
 
@@ -2848,9 +2848,9 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-114. ### 如何每秒更新组件？ {#114}
+114. ### 如何每秒更新组件？ 
 
      您需要使用`setInterval()`来触发更新，但您还需要在组件卸载时清除计时器以防止错误和内存泄漏。
 
@@ -2865,9 +2865,9 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-115. ### 如何将供应商前缀应用于 React 中的内联样式？ {#115}
+115. ### 如何将供应商前缀应用于 React 中的内联样式？ 
 
      React*不会*自动应用*供应商前缀*。您需要手动添加供应商前缀。
 
@@ -2880,9 +2880,9 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-116. ### 如何使用 react 和 ES6 导入和导出组件？ {#116}
+116. ### 如何使用 react 和 ES6 导入和导出组件？ 
 
      您应该使用默认值来导出组件
 
@@ -2904,22 +2904,22 @@
      使用导出标识符，MyProfile 表示该模块并被导出，在可以其他组件中可以在不使用该名称的情况下导入该组件。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
 
-117. ### React 组件命名有哪些例外？ {#117}
+117. ### React 组件命名有哪些例外？ 
 
      正在收集中。。。
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-118. ### 为什么组件 constructor 函数只调用一次？ {#118}
+118. ### 为什么组件 constructor 函数只调用一次？ 
 
      React 的*协调*算法假设在没有任何相反信息的情况下，如果自定义组件在后续渲染中出现在同一位置，则它与之前的组件相同，因此重用之前的实例而不是创建新实例。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-119. ### 如何在 React 中定义常量？ {#119}
+119. ### 如何在 React 中定义常量？ 
 
      您可以使用 ES7 `static` 修饰符来定义常量。
 
@@ -2930,9 +2930,9 @@
      ```
      
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-120. ### 如何以编程方式触发 React 中的点击事件？ {#120}
+120. ### 如何以编程方式触发 React 中的点击事件？ 
 
      您可以使用 ref 属性通过回调获取对底层`HTMLInputElement`对象进行引用，将该引用存储为类属性，然后使用该引用稍后使用该`HTMLElement.click`方法触发来自事件处理程序的单击。
 
@@ -2951,16 +2951,16 @@
          ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-121. ### 是否可以在普通 React 中使用 async/await？ {#121}
+121. ### 是否可以在普通 React 中使用 async/await？ 
 
      如果你想在 React 中使用 `async`/`await` ，你需要使用 *Babel* 和 [transform-async-to-generator](https://babeljs.io/docs/en/babel-plugin-transform-async-to-generator) 插件。React Native 附带Babel和各种转换的功能。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-122. ### React 的常见文件夹结构是什么？ {#122}
+122. ### React 的常见文件夹结构是什么？ 
 
      React 项目文件结构有两种常见的做法。
 
@@ -3012,16 +3012,16 @@
          ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-123. ### 流行的动画包有哪些？ {#123}
+123. ### 流行的动画包有哪些？ 
 
      *React Transition Group* 和 *React Motion* 是 React 生态系统中流行的动画包。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-124. ### 样式模块化有什么好处？ {#124}
+124. ### 样式模块化有什么好处？ 
 
      建议避免在组件中使用硬编码样式值。任何可能跨不同 UI 组件使用的样式值都应提取到它们自己的模块中。
 
@@ -3050,18 +3050,18 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-125. ### 什么是流行的特定于 React 的 linter？ {#125}
+125. ### 什么是流行的特定于 React 的 linter？ 
 
      ESLint 是一种流行的 JavaScript linter。有一些插件可以分析特定的代码风格。`eslint-plugin-ract`npm包是React最常用的一个 lint 包。 默认情况下，它将检查许多最佳实践，包括迭代器中的 key、prop types等。
 
      另一个流行的插件是 `eslint-plugin-jsx-a11y`，它帮助解决可访问性的常见问题。由于JSX 提供的语法与常规 HTML 略有不同，因此常规插件不会发现`alt文本`和`tabindex`的问题。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-126. ### 如何进行 AJAX 调用以及我应该在哪些组件生命周期方法中进行 AJAX 调用？ {#126}
+126. ### 如何进行 AJAX 调用以及我应该在哪些组件生命周期方法中进行 AJAX 调用？ 
 
      您可以使用 AJAX 库，例如 Axios、jQuery AJAX 和浏览器内置的`fetch`。您应该在`componentDidMount()`生命周期方法中获取数据。这样您就可以在检索数据时使用`setState()`来更新组件。
 
@@ -3112,9 +3112,9 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-127. ### 什么是 render props? {#127}
+127. ### 什么是 render props? 
 
      **Render Props** 是一种在组件之间共享代码的技术，它使用函数作为prop值。下面的组件使用了render prop，在render prop 中返回一个 React 元素。
 
@@ -3129,23 +3129,23 @@
 ## React Router
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-128. ### 什么是 React Router? {#128}
+128. ### 什么是 React Router? 
 
      React Router 是一个建立在 React 之上的强大的路由库，它可以帮助你非常快速地向应用程序添加新的页面和流程，同时保持页面上显示的内容与 URL 同步。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-129. ### React Router 与 history 库有何不同？ {#129}
+129. ### React Router 与 history 库有何不同？ 
 
      React Router 是`history`库的包装器，它处理浏览器`window.history` hash 与浏览器的交互。它还提供了内存历史记录，这对于没有全局历史记录的环境很有用，例如移动应用程序开发（React Native）和Node的单元测试。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
-130. ### React Router v4 中的 `<Router>` 组件是什么？ {#130}
+130. ### React Router v4 中的 `<Router>` 组件是什么？ 
 
      React Router v4 提供了以下 3个 `<Router>` 组件:
 
@@ -3156,7 +3156,7 @@
      上述组件将创建*browser*、*hash*和*memory* history实例。 React Router v4 使`history`与您的路由器关联的实例的属性和方法可通过`router`对象中的上下文使用。
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 132. ### What is the purpose of `push()` and `replace()` methods of `history`?
 
@@ -3168,7 +3168,7 @@
      If you think of the history as an array of visited locations, `push()` will add a new location to the array and `replace()` will replace the current location in the array with the new one.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 133. ### How do you programmatically navigate using React Router v4?
 
@@ -3234,7 +3234,7 @@
          ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 134. ### How to get query parameters in React Router v4?
 
@@ -3255,7 +3255,7 @@
      You should use a *polyfill* for IE11.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 135. ### Why you get "Router may have only one child element" warning?
 
@@ -3279,7 +3279,7 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 136. ### How to pass params to `history.push` method in React Router v4?
 
@@ -3296,7 +3296,7 @@
      The `search` property is used to pass query params in `push()` method.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 137. ### How to implement *default* or *NotFound* page?
 
@@ -3311,7 +3311,7 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 138. ### How to get history on React Router v4?
      Below are the list of steps to get history object on React Router v4,
@@ -3352,7 +3352,7 @@
          ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 139. ### How to perform automatic redirect after login?
 
@@ -3376,14 +3376,14 @@
 ## React 国际化
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 140. ### What is React Intl?
 
      The *React Intl* library makes internationalization in React straightforward, with off-the-shelf components and an API that can handle everything from formatting strings, dates, and numbers, to pluralization. React Intl is part of *FormatJS* which provides bindings to React via its components and API.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 141. ### What are the main features of React Intl?
      Below are the main features of React Intl,
@@ -3397,7 +3397,7 @@
         7. Built on standards.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 142. ### What are the two ways of formatting in React Intl?
 
@@ -3426,7 +3426,7 @@
          ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 143. ### How to use `<FormattedMessage>` as placeholder using React Intl?
 
@@ -3449,7 +3449,7 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 144. ### How to access current locale with React Intl?
 
@@ -3470,7 +3470,7 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 145. ### How to format date using React Intl?
 
@@ -3499,7 +3499,7 @@
 ## React Testing
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 146. ### What is Shallow Renderer in React testing?
 
@@ -3537,7 +3537,7 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 147. ### What is `TestRenderer` package in React?
 
@@ -3561,21 +3561,21 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 148. ### What is the purpose of ReactTestUtils package?
 
      *ReactTestUtils* are provided in the `with-addons` package and allow you to perform actions against a simulated DOM for the purpose of unit testing.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 149. ### What is Jest?
 
      *Jest* is a JavaScript unit testing framework created by Facebook based on Jasmine and provides automated mock creation and a `jsdom` environment. It's often used for testing components.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 150. ### What are the advantages of Jest over Jasmine?
 
@@ -3588,7 +3588,7 @@
      - Runs tests in parallel processes so that they finish sooner.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 151. ### Give a simple example of Jest test case
 
@@ -3631,7 +3631,7 @@
 ## React Redux
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 152. ### What is flux?
 
@@ -3642,14 +3642,14 @@
      ![flux](images/flux.png)
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 153. ### What is Redux?
 
      *Redux* is a predictable state container for JavaScript apps based on the *Flux design pattern*. Redux can be used together with React, or with any other view library. It is tiny (about 2kB) and has no dependencies.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 154. ### What are the core principles of Redux?
 
@@ -3660,7 +3660,7 @@
      3. **Changes are made with pure functions:** To specify how the state tree is transformed by actions, you write reducers. Reducers are just pure functions that take the previous state and an action as parameters, and return the next state.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 155. ### What are the downsides of Redux compared to Flux?
 
@@ -3671,7 +3671,7 @@
      3. **There is no nice Flow integration yet:** Flux currently lets you do very impressive static type checks which Redux doesn't support yet.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 156. ### What is the difference between `mapStateToProps()` and `mapDispatchToProps()`?
 
@@ -3708,14 +3708,14 @@
       ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 157. ### Can I dispatch an action in reducer?
 
      Dispatching an action within a reducer is an **anti-pattern**. Your reducer should be *without side effects*, simply digesting the action payload and returning a new state object. Adding listeners and dispatching actions within the reducer can lead to chained actions and other side effects.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 158. ### How to access Redux store outside a component?
 
@@ -3728,7 +3728,7 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 159. ### What are the drawbacks of MVW pattern?
 
@@ -3738,7 +3738,7 @@
      4. No way to do undo (travel back in time) easily without adding so much extra code.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 160. ### Are there any similarities between Redux and RxJS?
 
@@ -3747,7 +3747,7 @@
      Redux is a tool for managing state throughout the application. It is usually used as an architecture for UIs. Think of it as an alternative to (half of) Angular. RxJS is a reactive programming library. It is usually used as a tool to accomplish asynchronous tasks in JavaScript. Think of it as an alternative to Promises. Redux uses the Reactive paradigm because the Store is reactive. The Store observes actions from a distance, and changes itself. RxJS also uses the Reactive paradigm, but instead of being an architecture, it gives you basic building blocks, Observables, to accomplish this pattern.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 161. ### How to dispatch an action on load?
 
@@ -3776,7 +3776,7 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 162. ### How to use `connect()` from React Redux?
 
@@ -3803,7 +3803,7 @@
          ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 163. ### How to reset state in Redux?
 
@@ -3846,7 +3846,7 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 164. ### Whats the purpose of `at` symbol in the Redux connect decorator?
 
@@ -3902,7 +3902,7 @@
      The above examples are almost similar except the usage of decorator. The decorator syntax isn't built into any JavaScript runtimes yet, and is still experimental and subject to change. You can use babel for the decorators support.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 165. ### What is the difference between React context and React Redux?
 
@@ -3911,14 +3911,14 @@
      Whereas **Redux** is much more powerful and provides a large number of features that the Context API doesn't provide. Also, React Redux uses context internally but it doesn't expose this fact in the public API.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 166. ### Why are Redux state functions called reducers?
 
      Reducers always return the accumulation of the state (based on all previous and current actions). Therefore, they act as a reducer of state. Each time a Redux reducer is called, the state and action are passed as parameters. This state is then reduced (or accumulated) based on the action, and then the next state is returned. You could *reduce* a collection of actions and an initial state (of the store) on which to perform these actions to get the resulting final state.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 167. ### How to make AJAX request in Redux?
 
@@ -3947,14 +3947,14 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 168. ### Should I keep all component's state in Redux store?
 
       Keep your data in the Redux store, and the UI related state internally in the component.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 169. ### What is the proper way to access Redux store?
 
@@ -3994,7 +3994,7 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 170. ### What is the difference between component and container in React Redux?
 
@@ -4003,7 +4003,7 @@
      **Container** is an informal term for a component that is connected to a Redux store. Containers *subscribe* to Redux state updates and *dispatch* actions, and they usually don't render DOM elements; they delegate rendering to presentational child components.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 171. ### What is the purpose of the constants in Redux?
 
@@ -4058,7 +4058,7 @@
          ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 172. ### What are the different ways to write `mapDispatchToProps()`?
 
@@ -4085,7 +4085,7 @@
      The third option is just a shorthand for the first one.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 173. ### What is the use of the `ownProps` parameter in `mapStateToProps()` and `mapDispatchToProps()`?
 
@@ -4106,7 +4106,7 @@
      You can use this object to decide what to return from those functions.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 174. ### How to structure Redux top level directories?
 
@@ -4121,7 +4121,7 @@
      This structure works well for small and medium size apps.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 175. ### What is redux-saga?
 
@@ -4134,14 +4134,14 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 176. ### What is the mental model of redux-saga?
 
      *Saga* is like a separate thread in your application, that's solely responsible for side effects. `redux-saga` is a redux *middleware*, which means this thread can be started, paused and cancelled from the main application with normal Redux actions, it has access to the full Redux application state and it can dispatch Redux actions as well.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 177. ### What are the differences between `call()` and `put()` in redux-saga?
 
@@ -4164,28 +4164,28 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 178. ### What is Redux Thunk?
 
      *Redux Thunk* middleware allows you to write action creators that return a function instead of an action. The thunk can be used to delay the dispatch of an action, or to dispatch only if a certain condition is met. The inner function receives the store methods `dispatch()` and `getState()` as parameters.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 179. ### What are the differences between `redux-saga` and `redux-thunk`?
 
      Both *Redux Thunk* and *Redux Saga* take care of dealing with side effects. In most of the scenarios, Thunk uses *Promises* to deal with them, whereas Saga uses *Generators*. Thunk is simple to use and Promises are familiar to many developers, Sagas/Generators are more powerful but you will need to learn them. But both middleware can coexist, so you can start with Thunks and introduce Sagas when/if you need them.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 180. ### What is Redux DevTools?
 
      *Redux DevTools* is a live-editing time travel environment for Redux with hot reloading, action replay, and customizable UI. If you don't want to bother with installing Redux DevTools and integrating it into your project, consider using Redux DevTools Extension for Chrome and Firefox.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 181. ### What are the features of Redux DevTools?
      Some of the main features of Redux DevTools are below,
@@ -4197,7 +4197,7 @@
         5. With `persistState()` store enhancer, you can persist debug sessions across page reloads.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 182. ### What are Redux selectors and why to use them?
 
@@ -4215,14 +4215,14 @@
      2. The selector is not recomputed unless one of its arguments changes
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 183. ### What is Redux Form?
 
      *Redux Form* works with React and Redux to enable a form in React to use Redux to store all of its state. Redux Form can be used with raw HTML5 inputs, but it also works very well with common UI frameworks like Material UI, React Widgets and React Bootstrap.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 184. ### What are the main features of Redux Form?
      Some of the main features of Redux Form are:
@@ -4232,7 +4232,7 @@
        3. Formatting, parsing and normalization of field values.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 185. ### How to add multiple middlewares to Redux?
 
@@ -4246,7 +4246,7 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 186. ### How to set initial state in Redux?
 
@@ -4269,7 +4269,7 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 187. ### How Relay is different from Redux?
 
@@ -4289,12 +4289,12 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
 
 ## React Native
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 188. ### What is the difference between React Native and React?
 
@@ -4303,14 +4303,14 @@
      **React Native** is a mobile framework that compiles to native app components, allowing you to build native mobile applications (iOS, Android, and Windows) in JavaScript that allows you to use React to build your components, and implements React under the hood.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 189. ### How to test React Native apps?
 
      React Native can be tested only in mobile simulators like iOS and Android. You can run the app in your mobile using expo app (https://expo.io) Where it syncs using QR code, your mobile and computer should be in same wireless network.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 190. ### How to do logging in React Native?
 
@@ -4322,7 +4322,7 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 191. ### How to debug your React Native?
 
@@ -4337,7 +4337,7 @@
 ## React supported libraries & Integration
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 192. ### What is reselect and how it works?
 
@@ -4346,14 +4346,14 @@
      Reselect keeps a copy of the last inputs/outputs of the last call, and recomputes the result only if one of the inputs changes. If the the same inputs are provided twice in a row, Reselect returns the cached output. It's memoization and cache are fully customizable.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 193. ### What is Flow?
 
      *Flow* is a *static type checker* designed to find type errors in JavaScript. Flow types can express much more fine-grained distinctions than traditional type systems. For example, Flow helps you catch errors involving `null`, unlike most type systems.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 194. ### What is the difference between Flow and PropTypes?
 
@@ -4362,7 +4362,7 @@
      PropTypes is a *basic type checker* (runtime checker) which has been patched onto React. It can't check anything other than the types of the props being passed to a given component. If you want more flexible typechecking for your entire project Flow/TypeScript are appropriate choices.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 195. ### How to use Font Awesome icons in React?
 
@@ -4389,7 +4389,7 @@
          ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 196. ### What is React Dev Tools?
 
@@ -4401,14 +4401,14 @@
      3. **Standalone app** (Safari, React Native, etc)
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 197. ### Why is DevTools not loading in Chrome for local files?
 
      If you opened a local HTML file in your browser (`file://...`) then you must first open *Chrome Extensions* and check `Allow access to file URLs`.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 198. ### How to use Polymer in React?
      You need to follow below steps to use Polymer in React,
@@ -4448,7 +4448,7 @@
          ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 199. ### What are the advantages of React over Vue.js?
 
@@ -4461,7 +4461,7 @@
 
    **Note:** The above list of advantages are purely opinionated and it vary based on the professional experience. But they are helpful as base parameters.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 200. ### What is the difference between React and Angular?
      Let's see the difference between React and Angular in a table format.
@@ -4476,21 +4476,21 @@
 
    **Note:** The above list of differences are purely opinionated and it vary based on the professional experience. But they are helpful as base parameters.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 201. ### Why React tab is not showing up in DevTools?
 
      When the page loads, *React DevTools* sets a global named `__REACT_DEVTOOLS_GLOBAL_HOOK__`, then React communicates with that hook during initialization. If the website is not using React or if React fails to communicate with DevTools then it won't show up the tab.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 202. ### What are Styled Components?
 
      `styled-components` is a JavaScript library for styling React applications. It removes the mapping between styles and components, and lets you write actual CSS augmented with JavaScript.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 203. ### Give an example of Styled Components?
 
@@ -4523,14 +4523,14 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 204. ### What is Relay?
 
      Relay is a JavaScript framework for providing a data layer and client-server communication to web applications using the React view layer.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 205. ### How to use TypeScript in `create-react-app` application?
      Starting from react-scripts@2.1.0 or higher, there is a built-in support for typescript. i.e, `create-react-app` now supports typescript natively. You can just pass `--typescript` option as below
@@ -4563,7 +4563,7 @@
 ## Miscellaneous
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 206. ### What are the main features of Reselect library?
 
@@ -4616,7 +4616,7 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 209. ### Does the statics object work with ES6 classes in React?
 
@@ -4658,21 +4658,21 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 210. ### Can Redux only be used with React?
 
      Redux can be used as a data store for any UI layer. The most common usage is with React and React Native, but there are bindings available for Angular, Angular 2, Vue, Mithril, and more. Redux simply provides a subscription mechanism which can be used by any other code.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 211. ### Do you need to have a particular build tool to use Redux?
 
      Redux is originally written in ES6 and transpiled for production into ES5 with Webpack and Babel. You should be able to use it regardless of your JavaScript build process. Redux also offers a UMD build that can be used directly without any build process at all.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 212. ### How Redux Form `initialValues` get updated from state?
 
@@ -4688,7 +4688,7 @@
      If your `initialValues` prop gets updated, your form will update too.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 213. ### How React PropTypes allow different types for one prop?
 
@@ -4706,7 +4706,7 @@
      ```
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 214. ### Can I import an SVG file as react component?
 
@@ -4726,7 +4726,7 @@
      **Note**: Don't forget about the curly braces in the import.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 215. ### Why are inline ref callbacks or functions not recommended?
 
@@ -4778,14 +4778,14 @@
      ```
 
     **Note:** In React v16.3,
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 216. ### What is render hijacking in react?
 
      The concept of render hijacking is the ability to control what a component will output from another component. It  means that you decorate your component by wrapping it into a Higher-Order component. By wrapping, you can inject additional props or make other changes, which can cause changing logic of rendering. It does not actually enable hijacking, but by using HOC you make your component behave differently.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 217. ### What are HOC factory implementations?
      There are two main ways of implementing HOCs in React.
@@ -4823,7 +4823,7 @@
      }
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 218. ### How to pass numbers to React component?
 
@@ -4833,7 +4833,7 @@
         React.render(<User age={30} department={"IT"} />, document.getElementById('container'));
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 219. ### Do I need to keep all my state into Redux? Should I ever use react internal state?
      It is up to the developer's decision, i.e., it is developer's job to determine what kinds of state make up your application, and where each piece of state should live. Some users prefer to keep every single piece of data in Redux, to maintain a fully serializable and controlled version of their application at all times. Others prefer to keep non-critical or UI state, such as “is this dropdown currently open”, inside a component's internal state.
@@ -4846,7 +4846,7 @@
      5. Do you want to cache the data (i.e, use what's in state if it's already there instead of re-requesting it)?
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 220. ### What is the purpose of registerServiceWorker in React?
 
@@ -4862,7 +4862,7 @@
         registerServiceWorker();
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 221. ### What is React memo function?
 
@@ -4873,7 +4873,7 @@
      });
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 222. ### What is React lazy function?
      The `React.lazy` function lets you render a dynamic import as a regular component. It will automatically load the bundle containing the `OtherComponent` when the component gets rendered. This must return a Promise which resolves to a module with a default export containing a React component.
@@ -4891,7 +4891,7 @@
      **Note:**
      `React.lazy` and `Suspense` is not yet available for server-side rendering. If you want to do code-splitting in a server rendered app, we still recommend React Loadable.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 223. ### How to prevent unnecessary updates using setState?
      You can compare the current value of the state with an existing state value and decide whether to rerender the page or not. If the values are the same then you need to return **null** to stop re-rendering otherwise return the latest state value.
@@ -4910,7 +4910,7 @@
      };
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 224. ### How do you render Array, Strings and Numbers in React 16 Version?
      **Arrays**: Unlike older releases, you don't need to make sure **render** method return a single element in React16. You are able to return multiple sibling elements without a wrapping element by returning an array.
@@ -4951,7 +4951,7 @@
      }
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 225. ### How to use class field declarations syntax in React classes?
      React Class Components can be made much more concise using the class field declarations. You can initialize the local state without using the constructor and declare class methods by using arrow functions without the extra need to bind them.
@@ -4986,7 +4986,7 @@
      }
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 226. ### What are hooks?
      Hooks is a special function (introduced as a new feature in React 16.8) that lets you use state and other React features without writing a class.
@@ -5011,7 +5011,7 @@
      ```
      **Note:** Hooks can be used inside an existing function component.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 227. ### What rules need to be followed for hooks?
 
@@ -5021,7 +5021,7 @@
      2. Call Hooks from React Functions only. i.e, You shouldn’t call Hooks from regular JavaScript functions.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 228. ### How to ensure hooks followed the rules in your project?
      React team released an ESLint plugin called **eslint-plugin-react-hooks** that enforces these two rules. You can add this plugin to your project using the below command,
@@ -5045,7 +5045,7 @@
      **Note:** This plugin is intended to use in Create React App by default.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 229. ### What are the differences between Flux and Redux?
      Below are the major differences between Flux and Redux
@@ -5059,7 +5059,7 @@
      | It has a singleton dispatcher | There is no concept of dispatcher |
      | React components subscribe to the store | Container components uses connect function|
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 230. ### What are the benefits of React Router V4?
      Below are the main benefits of React Router V4 module,
@@ -5068,7 +5068,7 @@
      2. You don't need to manually set history. The router module will take care history by wrapping routes with  `<BrowserRouter>` component.
      3. The application size is reduced by adding only the specific router module(Web, core, or native)
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 231. ### Can you describe about componentDidCatch lifecycle method signature?
      The **componentDidCatch** lifecycle method is invoked after an error has been thrown by a descendant component. The method receives two parameters,
@@ -5080,7 +5080,7 @@
      componentDidCatch(error, info)
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 232. ### In which scenarios error boundaries do not catch errors?
      Below are the cases in which error boundaries doesn't work,
@@ -5090,7 +5090,7 @@
      3. During Server side rendering
      4. When errors thrown in the error boundary code itself
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 233. ### Why do you not need error boundaries for event handlers?
      Error boundaries do not catch errors inside event handlers.
@@ -5125,7 +5125,7 @@
      ```
      Note that the above example is demonstrating regular JavaScript behavior and doesn’t use error boundaries.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 234. ### What is the difference between try catch block and error boundaries?
      Try catch block works with imperative code whereas error boundaries are meant for declarative code to render on the screen.
@@ -5147,19 +5147,19 @@
      So if an error occurs in a **componentDidUpdate** method caused by a **setState** somewhere deep in the tree, it will still correctly propagate to the closest error boundary.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 235. ### What is the behavior of uncaught errors in react 16?
      In React 16, errors that were not caught by any error boundary will result in unmounting of the whole React component tree. The reason behind this decision is that it is worse to leave corrupted UI in place than to completely remove it. For example, it is worse for a payments app to display a wrong amount than to render nothing.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 236. ### What is the proper placement for error boundaries?
      The granularity of error boundaries usage is up to the developer based on project needs. You can follow either of these approaches,
      1. You can wrap top-level route components to display a generic error message for the entire application.
      2. You can also wrap individual components in an error boundary to protect them from crashing the rest of the application.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 237. ### What is the benefit of component stack trace from error boundary?
      Apart from error messages and javascript stack, React16 will display the component stack trace with file names and line numbers using error boundary concept.
@@ -5169,12 +5169,12 @@
      ![stacktrace](images/error_boundary.png)
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 238. ### What is the required method to be defined for a class component?
      The `render()` method is the only required method in a class component. i.e, All methods other than render method are optional for a class component.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 239. ### What are the possible return types of render method?
      Below are the list of following types used and return from render method,
@@ -5186,7 +5186,7 @@
      5. **Booleans or null:** Doesn't render anything but these types are used to conditionally render content.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 240. ### What is the main purpose of constructor?
      The constructor is mainly used for two purposes,
@@ -5203,12 +5203,12 @@
      }
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 241. ### Is it mandatory to define constructor for React component?
      No, it is not mandatory. i.e, If you don’t initialize state and you don’t bind methods, you don’t need to implement a constructor for your React component.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 242. ### What are default props?
      The defaultProps are defined as a property on the component class to set the default props for the class. This is used for undefined props, but not for null props.
@@ -5234,12 +5234,12 @@
      ```
      **Note:** If you provide null value then it remains null value.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 243. ### Why should not call setState in componentWillUnmount?
      You should not call `setState()` in `componentWillUnmount()` because once a component instance is unmounted, it will never be mounted again.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 244. ### What is the purpose of getDerivedStateFromError?
      This lifecycle method is invoked after an error has been thrown by a descendant component. It receives the error that was thrown as a parameter and should return a value to update state.
@@ -5272,7 +5272,7 @@
      }
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 245. ### What is the methods order when component re-rendered?
      An update can be caused by changes to props or state. The below methods are called in the following order when a component is being re-rendered.
@@ -5284,7 +5284,7 @@
      5. componentDidUpdate()
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 246. ### What are the methods invoked during error handling?
      Below methods are called when there is an error during rendering, in a lifecycle method, or in the constructor of any child component.
@@ -5292,7 +5292,7 @@
      1. static getDerivedStateFromError()
      2. componentDidCatch()
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 247. ### What is the purpose of displayName class property?
      The displayName string is used in debugging messages. Usually, you don’t need to set it explicitly because it’s inferred from the name of the function or class that defines the component. You might want to set it explicitly if you want to display a different name for debugging purposes or when you create a higher-order component.
@@ -5310,12 +5310,12 @@
      }
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 248. ### What is the browser support for react applications?
      React supports all popular browsers, including Internet Explorer 9 and above, although some polyfills are required for older browsers such as IE 9 and IE 10. If you use  **es5-shim and es5-sham** polyfill then it even support old browsers that doesn't support ES5 methods.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 249. ### What is the purpose of unmountComponentAtNode method?
      This method is available from react-dom package and it removes a mounted React component from the DOM and clean up its event handlers and state. If no component was mounted in the container, calling this function does nothing. Returns true if a component was unmounted and false if there was no component to unmount.
@@ -5325,7 +5325,7 @@
      ReactDOM.unmountComponentAtNode(container)
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 250. ### What is code-splitting?
      Code-Splitting is a feature supported by bundlers like Webpack and Browserify which can create multiple bundles that can be dynamically loaded at runtime. The react project supports code splitting via dynamic import() feature.
@@ -5365,7 +5365,7 @@
 
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 251. ### What is the benefit of strict mode?
      The <StrictMode> will be  helpful in the below cases
@@ -5376,7 +5376,7 @@
      4. Detecting **legacy context** API.
      5. Warning about deprecated findDOMNode usage
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 252. ### What are Keyed Fragments?
      The Fragments declared with the explicit <React.Fragment> syntax may have keys. The general use case is mapping a collection to an array of fragments as below,
@@ -5399,7 +5399,7 @@
 
      **Note:** key is the only attribute that can be passed to Fragment. In the future, there might be a support for additional attributes, such as event handlers.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 253. ### Does React support all HTML attributes?
      As of React 16, both standard or custom DOM attributes are fully supported. Since React components often take both custom and DOM-related props, React uses the camelCase convention just like the DOM APIs.
@@ -5413,7 +5413,7 @@
      ```
      These props work similarly to the corresponding HTML attributes, with the exception of the special cases. It also support all SVG attributes.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 254. ### What are the limitations with HOCs?
 
@@ -5455,7 +5455,7 @@
      3. **Refs aren’t passed through:**
         For HOCs you need to pass through all props to the wrapped component but this does not work for refs. This is because ref is not really a prop similar to key. In this case you need to use the React.forwardRef API
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 255. ### How to debug forwardRefs in DevTools?
 
@@ -5500,7 +5500,7 @@
      }
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 256. ### When component props defaults to true?
      If you pass no value for a prop, it defaults to true. This behavior is available so that it matches the behavior of HTML.
@@ -5514,7 +5514,7 @@
      ```
      **Note:** It is not recommended to use this approach because it can be confused with the ES6 object shorthand (example, `{name}` which is short for `{name: name}`)
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 257. ### What is NextJS and major features of it?
      Next.js is a popular and lightweight framework for static and server‑rendered applications built with React. It also provides styling and routing solutions. Below are the major features provided by NextJS,
@@ -5526,7 +5526,7 @@
      5. Able to implement with Express or any other Node.js HTTP server
      6. Customizable with your own Babel and Webpack configurations
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 258. ### How do you pass an event handler to a component?
      You can pass event handlers and other functions as props to child components. It can be used in child component as  below,
@@ -5535,7 +5535,7 @@
      <button onClick={this.handleClick}>
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 259. ### Is it good to use arrow functions in render methods?
      Yes, You can use. It is often the easiest way to pass parameters to callback functions. But you need to optimize the performance while using it.
@@ -5553,7 +5553,7 @@
 
      **Note:** Using an arrow function in render method creates a new function each time the component renders, which may have performance implications
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 260. ### How to prevent a function from being called multiple times?
      If you use an event handler such as **onClick or onScroll** and want to prevent the callback from being fired too quickly, then you can limit the rate at which callback is executed. This can be achieved in the below possible ways,
@@ -5562,7 +5562,7 @@
      2. **Debouncing:** Publish changes after a period of inactivity. For example, it can be used using _.debounce lodash function
      3. **RequestAnimationFrame throttling:** Changes based on requestAnimationFrame. For example, it can be used using raf-schd lodash function
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 261. ### How JSX prevents Injection Attacks?
      React DOM escapes any values embedded in JSX before rendering them. Thus it ensures that you can never inject anything that’s not explicitly written in your application. Everything is converted to a string before being rendered.
@@ -5575,7 +5575,7 @@
      ```
      This way you can prevent XSS(Cross-site-scripting) attacks in the application.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 262. ### How do you update rendered elements?
      You can update UI(represented by rendered element) by passing the newly created element to ReactDOM's render method.
@@ -5596,7 +5596,7 @@
      setInterval(tick, 1000);
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 263. ### How do you say that props are readonly?
      When you declare a component as a function or a class, it must never modify its own props.
@@ -5610,7 +5610,7 @@
      ```
      The above function is called “pure” because it does not attempt to change their inputs, and always return the same result for the same inputs. Hence, React has a single rule saying "All React components must act like pure functions with respect to their props."
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 264. ### How do you say that state updates are merged?
      When you call setState() in the component, React merges the object you provide into the current state.
@@ -5646,7 +5646,7 @@
      ```
      As mentioned in the above code snippets, `this.setState({comments})` updates only comments variable without modifying or replacing `posts` variable.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 265. ### How do you pass arguments to an event handler?
      During iterations or loops, it is common to pass an extra parameter to an event handler. This can be achieved through arrow functions or bind method.
@@ -5659,7 +5659,7 @@
      ```
      In the both approaches, the synthetic argument `e` is passed as a second argument. You need to pass it explicitly for arrow functions and it will be passed automatically for `bind` method.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 266. ### How to prevent component from rendering?
      You can prevent component from rendering by returning null based on specific condition. This way it can conditionally render component.
@@ -5696,7 +5696,7 @@
      ```
      In the above example, the `greeting` component skips its rendering section by applying condition and returning null value.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 267. ### What are the conditions to safely use the index as a key?
      There are three conditions to make sure, it is safe use the index as a key.
@@ -5706,7 +5706,7 @@
      3. The list is never reordered or filtered.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 268. ### Should keys be globally unique?
      The keys used within arrays should be unique among their siblings but they don’t need to be globally unique. i.e, You can use the same keys with two different arrays.
@@ -5741,7 +5741,7 @@
      }
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 269. ### What is the popular choice for form handling?
      `Formik` is a form library for react which provides solutions such as validation, keeping track of the visited fields, and handling form submission.
@@ -5754,7 +5754,7 @@
 
      It is used to create a scalable, performant, form helper with a minimal API to solve annoying stuff.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 270. ### What are the advantages of formik over redux form library?
      Below are the main reasons to recommend formik over redux form library,
@@ -5764,13 +5764,13 @@
      3. Redux-Form is 22.5 kB minified gzipped whereas Formik is 12.7 kB
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 271. ### Why are you not required to use inheritance?
      In React, it is recommended to use composition over inheritance to reuse code between components. Both Props and composition give you all the flexibility you need to customize a component’s look and behavior explicitly and safely.
      Whereas, If you want to reuse non-UI functionality between components, it is suggested to extract it into a separate JavaScript module. Later components import it and use that function, object, or class, without extending it.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 272. ### Can I use web components in react application?
      Yes, you can use web components in a react application. Even though many developers won't use this combination, it may require especially if you are using third-party UI components that are written using Web Components.
@@ -5793,7 +5793,7 @@
      export default App;
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 273. ### What is dynamic import?
      You can achieve code-splitting in your app using dynamic import.
@@ -5812,7 +5812,7 @@
      });
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 274. ### What are loadable components?
      If you want to do code-splitting in a server rendered app, it is recommend to use Loadable Components because React.lazy and Suspense is not yet available for server-side rendering. Loadable lets you render a dynamic import as a regular component.
@@ -5834,7 +5834,7 @@
      ```
      Now OtherComponent will be loaded in a separated bundle
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 275. ### What is suspense component?
      If the module containing the dynamic import is not yet loaded by the time parent component renders, you must show some fallback content while you’re waiting for it to load using a loading indicator. This can be done using **Suspense** component.
@@ -5856,7 +5856,7 @@
      ```
      As mentioned in the above code, Suspense is wrapped above the lazy component.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 276. ### What is route based code splitting?
      One of the best place to do code splitting is with routes. The entire page is going to re-render at once so users are unlikely to interact with other elements in the page at the same time. Due to this, the user experience won't be disturbed.
@@ -5883,7 +5883,7 @@
      ```
      In the above code, the code splitting will happen at each route level.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 277. ### Give an example on How to use context?
      **Context** is designed to share data that can be considered **global** for a tree of React components.
@@ -5920,7 +5920,7 @@
      }
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 278. ### What is the purpose of default value in context?
      The defaultValue argument is only used when a component does not have a matching Provider above it in the tree. This can be helpful for testing components in isolation without wrapping them.
@@ -5931,7 +5931,7 @@
      const MyContext = React.createContext(defaultValue);
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 279. ### How do you use contextType?
      ContextType is used to consume the context object. The contextType property can be used in two ways,
@@ -5976,7 +5976,7 @@
          }
          ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 280. ### What is a consumer?
      A Consumer is a React component that subscribes to context changes. It requires a function as a child which receives current context value as argument and returns a react node. The value argument passed to the function will be equal to the value prop of the closest Provider for this context above in the tree.
@@ -5989,7 +5989,7 @@
      </MyContext.Consumer>
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 281. ### How do you solve performance corner cases while using context?
      The context uses reference identity to determine when to re-render, there are some gotchas that could trigger unintentional renders in consumers when a provider’s parent re-renders.
@@ -6029,7 +6029,7 @@
      }
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 282. ### What is the purpose of forward ref in HOCs?
      Refs will not get passed through because ref is not a prop. It is handled differently by React just like **key**. If you add a ref to a HOC, the ref will refer to the outermost container component, not the wrapped component. In this case, you can use Forward Ref API. For example, we can explicitly forward refs to the inner FancyButton component using the React.forwardRef API.
@@ -6085,17 +6085,17 @@
          />;
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 283. ### Is ref argument available for all functions or class components?
      Regular function or class components don’t receive the ref argument, and ref is not available in props either. The second ref argument only exists when you define a component with React.forwardRef call.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 284. ### Why do you need additional care for component libraries while using forward refs?
      When you start using forwardRef in a component library, you should treat it as a breaking change and release a new major version of your library. This is because your library likely has a different behavior such as what refs get assigned to, and what types are exported. These changes can break apps and other libraries that depend on the old behavior.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 285. ### How to create react class components without ES6?
      If you don’t use ES6 then you may need to use the create-react-class module instead. For default props, you need to define getDefaultProps() as a function on the passed object. Whereas for initial state, you have to provide a separate getInitialState method that returns the initial state.
@@ -6120,7 +6120,7 @@
      ```
      **Note:** If you use createReactClass then auto binding is available for all methods. i.e, You don't need to use `.bind(this)` with in constructor for event handlers.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 286. ### Is it possible to use react without JSX?
      Yes, JSX is not mandatory for using React. Actually it is convenient when you don’t want to set up compilation in your build environment. Each JSX element is just syntactic sugar for calling `React.createElement(component, props, ...children)`.
@@ -6155,7 +6155,7 @@
      );
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 287. ### What is diffing algorithm?
      React needs to use algorithms to find out how to efficiently update the UI to match the most recent tree. The diffing algorithms is generating the minimum number of operations to transform one tree into another. However, the algorithms have a complexity in the order of O(n3) where n is the number of elements in the tree.
@@ -6165,7 +6165,7 @@
      1. Two elements of different types will produce different trees.
      2. The developer can hint at which child elements may be stable across different renders with a key prop.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 288. ### What are the rules covered by diffing algorithm?
      When diffing two trees, React first compares the two root elements. The behavior is different depending on the types of the root elements. It covers the below rules during reconciliation algorithm,
@@ -6211,7 +6211,7 @@
      </ul>
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 289. ### When do you need to use refs?
      There are few use cases to go for refs,
@@ -6220,7 +6220,7 @@
      2. Triggering imperative animations.
      3. Integrating with third-party DOM libraries.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 290. ### Must prop be named as render for render props?
      Even though the pattern named render props, you don’t have to use a prop named render to use this pattern. i.e,  Any prop that is a function that a component uses to know what to render is technically a “render prop”. Lets take an example with the children prop for render props,
@@ -6249,12 +6249,12 @@
      };
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 291. ### What are the problems of using render props with pure components?
      If you create a function inside a render method, it negates the purpose of pure component. Because the shallow prop comparison will always return false for new props, and each render in this case will generate a new value for the render prop. You can solve this issue by defining the render function as instance method.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 292. ### How do you create HOC using render props?
      You can implement most higher-order components (HOC) using a regular component with a render prop. For example, if you would prefer to have a withMouse HOC instead of a <Mouse> component, you could easily create one using a regular <Mouse> with a render prop.
@@ -6275,12 +6275,12 @@
 
      This way render props gives the flexibility of using either pattern.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 293. ### What is windowing technique?
      Windowing is a technique that only renders a small subset of your rows at any given time, and can dramatically reduce the time it takes to re-render the components as well as the number of DOM nodes created. If your application renders long lists of data then this technique is recommended. Both react-window and react-virtualized are popular windowing libraries which provides several reusable components for displaying lists, grids, and tabular data.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 294. ### How do you print falsy values in JSX?
      The falsy values such as false, null, undefined, and true are valid children but they don't render anything. If you still want to display them then you need to convert it to string. Let's take an example on how to convert to a string,
@@ -6291,14 +6291,14 @@
      </div>
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 295. ### What is the typical use case of portals?
      React portals are very useful when a parent component has overflow: hidden or has properties that affect the stacking context (e.g. z-index, position, opacity) and you need to visually “break out” of its container.
 
      For example, dialogs, global message notifications, hovercards, and tooltips.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 296. ### How do you set default value for uncontrolled component?
      In React, the value attribute on form elements will override the value in the DOM. With an uncontrolled component, you might want React to specify the initial value, but leave subsequent updates uncontrolled. To handle this case, you can specify a **defaultValue** attribute instead of **value**.
@@ -6321,13 +6321,13 @@
      ```
      The same applies for `select` and `textArea` inputs. But you need to use **defaultChecked** for `checkbox` and `radio` inputs.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 297. ### What is your favorite React stack?
      Even though the tech stack varies from developer to developer, the most popular stack is used in react boilerplate project code. It mainly uses Redux and redux-saga for state management and asynchronous side-effects, react-router for routing purpose, styled-components for styling react components, axios for invoking REST api, and other supported stack such as webpack, reselect, ESNext, Babel.
      You can clone the project https://github.com/react-boilerplate/react-boilerplate and start working on any new react project.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 298. ### What is the difference between Real DOM and Virtual DOM?
      Below are the main differences between Real DOM and Virtual DOM,
@@ -6341,7 +6341,7 @@
      | Creates a new DOM if element updates | It updates the JSX if element update|
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 299. ### How to add Bootstrap to a react application?
      Bootstrap can be added to your React app in a three possible ways,
@@ -6358,7 +6358,7 @@
         1. react-bootstrap
         2. reactstrap
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 300. ### Can you list down top websites or applications using react as front end framework?
      Below are the `top 10 websites` using React as their front-end framework,
@@ -6374,17 +6374,17 @@
      9. Netflix
      10. PayPal
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 301. ### Is it recommended to use CSS In JS technique in React?
      React does not have any opinion about how styles are defined but if you are a beginner then good starting point is to define your styles in a separate *.css file as usual and refer to them using className. This functionality is not part of React but came from third-party libraries. But If you want to try a different approach(CSS-In-JS) then styled-components library is a good option.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 302. ### Do I need to rewrite all my class components with hooks?
      No. But you can try Hooks in a few components(or new components) without rewriting any existing code. Because there are no plans to remove classes in ReactJS.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 303. ### How to fetch data with React Hooks?
      The effect hook called `useEffect` is used to fetch the data with axios from the API and to set the data in the local state of the component with the state hook’s update function.
@@ -6424,12 +6424,12 @@
 
      Remember we provided an empty array as second argument to the effect hook to avoid activating it on component updates but only on mounting of the component. i.e, It fetches only on component mount.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 304. ### Is Hooks cover all use cases for classes?
      Hooks doesn't cover all use cases of classes but there is a plan to add them soon. Currently there are no Hook equivalents to the uncommon **getSnapshotBeforeUpdate** and **componentDidCatch** lifecycles yet.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 305. ### What is the stable release for hooks support?
      React includes a stable implementation of React Hooks in 16.8 release for below packages
@@ -6439,7 +6439,7 @@
      3. React Test Renderer
      4. React Shallow Renderer
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 306. ### Why do we use array destructuring (square brackets notation) in `useState`?
      When we declare a state variable with `useState`, it returns a pair — an array with two items. The first item is the current value, and the second is a function that updates the value. Using [0] and [1] to access them is a bit confusing because they have a specific meaning. This is why we use array destructuring instead.
@@ -6456,7 +6456,7 @@
      const [user, setUser] = useState('userProfile');
      ```
 
-     **[⬆ 返回顶部](#table-of-contents)**
+     **[⬆ 返回顶部](#目录)**
     
 307. ### What are the sources used for introducing hooks?
      Hooks got the ideas from several different sources. Below are some of them,
@@ -6467,12 +6467,12 @@
      4. Subscriptions in Rx.
      5. Reducer components in ReasonReact.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 308. ### How do you access imperative API of web components?
      Web Components often expose an imperative API to implement its functions. You will need to use a **ref** to interact with the DOM node directly if you want to access imperative API of a web component. But if you are using third-party Web Components, the best solution is to write a React component that behaves as a **wrapper** for your Web Component.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 309. ### What is formik?
      Formik is a small react form library that helps you with the three major problems,
@@ -6482,27 +6482,27 @@
      3. Handling form submission
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 310. ### What are typical middleware choices for handling asynchronous calls in Redux?
      Some of the popular middleware choices for handling asynchronous calls in Redux eco system are `Redux Thunk, Redux Promise, Redux Saga`.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 311. ### Do browsers understand JSX code?
      No, browsers can't understand JSX code. You need a transpiler to convert your JSX to regular Javascript that browsers can understand. The most widely used transpiler right now is Babel.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 312. ### Describe about data flow in react?
      React implements one-way reactive data flow using props which reduce boilerplate and is easier to understand than traditional two-way data binding.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 313. ### What is react scripts?
      The `react-scripts` package is a set of scripts from the create-react-app starter pack which helps you kick off projects without configuring. The `react-scripts start` command sets up the development environment and starts a server, as well as hot module reloading.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 314. ### What are the features of create react app?
      Below are the list of some of the features provided by create react app.
@@ -6516,13 +6516,13 @@
      7. An offline-first service worker and a web app manifest, meeting all the Progressive Web App criteria.
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 315. ### What is the purpose of renderToNodeStream method?
      The `ReactDOMServer#renderToNodeStream` method is used to generate HTML on the server and send the markup down on the initial request for faster page loads. It also helps search engines to crawl your pages easily for SEO purposes.
      **Note:** Remember this method is not available in the browser but only server.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 316. ### What is MobX?
      MobX is a simple, scalable and battle tested state management solution for applying functional reactive programming (TFRP). For reactJs application, you need to install below packages,
@@ -6531,7 +6531,7 @@
      npm install mobx-react --save
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 317. ### What are the differences between Redux and MobX?
      Below are the main differences between Redux and MobX,
@@ -6546,7 +6546,7 @@
      | How it stores | Uses JS Object to store | Uses observable to store the data |
 
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 318. ### Should I learn ES6 before learning ReactJS?
      No, you don’t have to learn es2015/es6 to learn react. But you may find many resources or React ecosystem uses ES6 extensively. Let's see some of the frequently used ES6 features,
@@ -6578,7 +6578,7 @@
          const users = usersList.map(user => <li>{user.name}</li>);
          ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 319. ### What is Concurrent Rendering?
      The Concurrent rendering makes React apps to be more responsive by rendering component trees without blocking the main UI thread. It allows React to interrupt a long-running render to handle a high-priority event. i.e, When you enabled concurrent Mode, React will keep an eye on other tasks that need to be done, and if there's something with a higher priority it will pause what it is currently rendering and let the other task finish first. You can enable this in two ways,
@@ -6593,12 +6593,12 @@
      ReactDOM.unstable_createRoot(domNode).render(<App />);
      ```
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 320. ### What is the difference between async mode and concurrent mode?
      Both refers the same thing. Previously concurrent Mode being referred to as "Async Mode" by React team. The name has been changed to highlight React’s ability to perform work on different priority levels. So it avoids the confusion from other approaches to Async Rendering.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
     
 321. ### Can I use javascript urls in react16.9?
      Yes, you can use javascript: URLs but it will log a warning in the console. Because URLs starting with javascript: are dangerous by including unsanitized output in a tag like ```<a href>``` and create a security hole.
@@ -6612,7 +6612,7 @@
      ```
      Remember that the future versions will throw an error for javascript URLs.
   
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
    
 322. ### What is the purpose of eslint plugin for hooks?
      The ESLint plugin enforces rules of Hooks to avoid bugs. It assumes that any function starting with ”use” and a capital letter right after it is a Hook. In particular, the rule enforces that,
@@ -6620,7 +6620,7 @@
      1. Calls to Hooks are either inside a PascalCase function (assumed to be a component) or another useSomething function (assumed to be a custom Hook).
      2. Hooks are called in the same order on every render.
 
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
 
 323. ### What is the difference between Imperative and Declarative in React?
      Imagine a simple UI component, such as a "Like" button. When you tap it, it turns blue if it was previously grey, and grey if it was previously blue.
@@ -6653,7 +6653,7 @@
 
      Because the declarative approach separates concerns, this part of it only needs to handle how the UI should look in a sepecific state, and is therefore much simpler to understand.
      
-   **[⬆ 返回顶部](#table-of-contents)**
+   **[⬆ 返回顶部](#目录)**
 
 324. ### What are the benefits of using typescript with reactjs?
      Below are some of the benefits of using typescript with Reactjs,
@@ -6663,7 +6663,7 @@
      3. IDEs such as VS Code was made for TypeScript
      4. Avoid bugs with the ease of readability and Validation
 
-     **[⬆ 返回顶部](#table-of-contents)**
+     **[⬆ 返回顶部](#目录)**
 
 325. ### How do you make sure that user remains authenticated on page refresh while using Context API State Management?
 When a user logs in and reload, to persist the state generally we add the load user action in the useEffect hooks in the main App.js. While using Redux, loadUser action can be easily accessed.
@@ -6733,7 +6733,7 @@ ReactDOM.render(
     }
 ```
 
-  **[⬆ 返回顶部](#table-of-contents)**
+  **[⬆ 返回顶部](#目录)**
 
 326. ### What are the benefits of new JSX transform?
      There are three major benefits of new JSX transform,
@@ -6742,7 +6742,7 @@ ReactDOM.render(
      2. The compiled output might improve the bundle size in a small amount
      3. The future improvements provides the flexibility to reduce the number of concepts to learn React.
                  
-  **[⬆ 返回顶部](#table-of-contents)**
+  **[⬆ 返回顶部](#目录)**
 
 327. ### How is the new JSX transform different from old transform??
      The new JSX transform doesn’t require React to be in scope. i.e, You don't need to import React package for simple scenarios.
@@ -6791,7 +6791,7 @@ ReactDOM.render(
 
      **Note:** You still need to import React to use Hooks.
                  
-  **[⬆ 返回顶部](#table-of-contents)**
+  **[⬆ 返回顶部](#目录)**
                  
 328. ### How do you get redux scaffolding using create-react-app?
      Redux team has provided official redux+js or redux+typescript templates for create-react-app project. The generated project setup includes,
@@ -6811,19 +6811,19 @@ ReactDOM.render(
      ```js
      npx create-react-app my-app --template redux-typescript
      ````
-  **[⬆ 返回顶部](#table-of-contents)**
+  **[⬆ 返回顶部](#目录)**
                  
 329. ### What are React Server components?
      React Server Component is a way to write React component that gets rendered in the server-side with the purpose of improving React app performance. These components allow us to load components from the backend. 
     
      **Note:** React Server Components is still under development and not recommended for production yet.
                  
-  **[⬆ 返回顶部](#table-of-contents)**
+  **[⬆ 返回顶部](#目录)**
      
 330. ### What is prop drilling?
      Prop Drilling is the process by which you pass data from one component of the React Component tree to another by going through other components that do not need the data but only help in passing it around.
                  
-  **[⬆ 返回顶部](#table-of-contents)**
+  **[⬆ 返回顶部](#目录)**
 
 331. ### What is state mutation and how to prevent it?
                      
@@ -6850,14 +6850,14 @@ ReactDOM.render(
 
         **How to prevent it:** Make sure your state variables are immutable by either enforcing immutability by using plugins like Immutable.js, always using `setState` to make updates, and returning new instances in reducers when sending updated state values.
         
-  **[⬆ 返回顶部](#table-of-contents)**
+  **[⬆ 返回顶部](#目录)**
                             
 332. ### What is the difference between useState and useRef hook?
      1. useState causes components to re-render after state updates whereas useRef doesn’t cause a component to re-render when the value or state changes.
         Essentially, useRef is like a “box” that can hold a mutable value in its (.current) property.
      2. useState allows us to update the state inside components. While useRef allows refrencing DOM elements.
                  
-  **[⬆ 返回顶部](#table-of-contents)**
+  **[⬆ 返回顶部](#目录)**
 
   333. ### What are the Differences Between Functional and Class Component
   ## Class Component syntax
@@ -7006,7 +7006,7 @@ To use State in class components we use the constructor method and the setState 
 Functional components use the useEffect hook instead of lifecycle method [useEffect](https://www.w3schools.com/react/react_useeffect.asp )    
  Class components uses Lifecycle method    **componentWillUnmount** etc. [ Lifecycle methods](https://www.w3schools.com/react/react_lifecycle.asp )
 
-  **[⬆ 返回顶部](#table-of-contents)**
+  **[⬆ 返回顶部](#目录)**
 
 
 
